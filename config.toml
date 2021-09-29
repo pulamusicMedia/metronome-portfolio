@@ -1,5 +1,5 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
+languageCode = "en"
 title = "metronome"
 theme = "creative-portfolio"
 
@@ -11,8 +11,8 @@ googleAnalytics = ""
 [params]
   # use custom.css for styling
   style = "blue"
-  description = "a blog about rhythm &amp; rhythmic studies"
-  copyright = "&copy; 2021 pulamusic"
+  #description = "a blog about rhythm &amp; rhythmic studies"
+  copyright = "&copy; <span id=\"year-tag\"></span> pulamusic"
   sidebarAbout = [
     "I am a musician &amp; academic, specializing in jazz &amp; blues history",
     "I'm a New Englander through and through, though I spent a number of years living and working in Africa and the Caribbean"
@@ -34,7 +34,25 @@ googleAnalytics = ""
   name = "contact"
   url = "contact/"
 
+  # social media links
   [params.social]
   twitter = "https://twitter.com/pulamusic"
   linkedin = "https://www.linkedin.com/in/james-carroll-36001511a/"
   github = "https://github.com/pulamusic"
+
+# set up languages
+defaultContentLanguage = "en"
+[languages]
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/en"
+    title = "metronome"
+    description = "a blog about rhythm &amp; rhythmic studies"
+    weight = 1
+  [languages.fr]
+    languageName = "Français"
+    contentDir = "content/fr"
+    title = "metronome"
+    description = "un blog sur le rythme &amp; études rythmiques"
+    weight = 2
+
