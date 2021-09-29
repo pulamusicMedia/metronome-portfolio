@@ -1,3 +1,40 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "metronome"
+theme = "creative-portfolio"
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+[params]
+  # use custom.css for styling
+  style = "blue"
+  description = "a blog about rhythm &amp; rhythmic studies"
+  copyright = "&copy; 2021 pulamusic"
+  sidebarAbout = [
+    "I am a musician &amp; academic, specializing in jazz &amp; blues history",
+    "I'm a New Englander through and through, though I spent a number of years living and working in Africa and the Caribbean"
+  ]
+
+  # contact page (set up formspree)
+  email = "contact@pulamusic.com"
+
+  # sidebar nav links
+  [[params.navlinks]]
+  name = "home"
+  url = "portfolio/"
+
+  [[params.navlink]]
+  name = "about"
+  url = "about/"
+
+  [[params.navlink]]
+  name = "contact"
+  url = "contact/"
+
+  [params.social]
+  twitter = "https://twitter.com/pulamusic"
+  linkedin = "https://www.linkedin.com/in/james-carroll-36001511a/"
+  github = "https://github.com/pulamusic"
